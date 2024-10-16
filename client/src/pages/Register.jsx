@@ -1,10 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div>Register</div>
-
-    ///dwasd
+    <div className="auth">
+      <h1>Login</h1>
+      <form>
+        <input required type="text" placeholder="username" />
+        <input required type="email" placeholder="email" />
+        <input required type="text" placeholder="password" />
+        <button>Register</button>
+        <p>This is an error</p>
+        <span>
+          Don't you have an account? <Link to="/login">login</Link>
+        </span>
+      </form>
+    </div>
   );
 };
 
